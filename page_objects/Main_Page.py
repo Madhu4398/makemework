@@ -26,7 +26,7 @@ class Main_Page(Base_Page):
         if temperature is not None:
             self.write("The temperature parsed is: %s"%temperature,level="debug")
             #Strip away the degree centigrade
-            temperature = temperature.split()
+            temperature = temperature.split(' ')
             
             try:
                 temperature = int(temperature[0] )
